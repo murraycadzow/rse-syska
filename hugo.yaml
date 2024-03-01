@@ -103,3 +103,6 @@ params:
   blog:
     list:
       displayTags: true
+
+  taxonomies:
+    tag: tags

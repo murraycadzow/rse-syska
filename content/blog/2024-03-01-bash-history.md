@@ -1,9 +1,16 @@
 ---
 title: Better bash history
+params:
+  author: Murray Cadzow
+tags:
+  - bash
+  - config
+  - setup
+summary: "A way to custom log commands run in BASH"
 ---
 
 
-Bash records your history as it goes but if you are operating across multiple windows it doesn’t work the way you would hope for - e.g. it is only recorded from a single given session, even if you work in multiple. PROMPT_COMMAND is a bash variable that is run as part of running commands. This particular one is designed to time and date stamp commands (not run as root) and their working directory into a daily log file. The logs live in ~/.logs/ so this needs to be made for the command to run mkdir -p ~/.logs.
+Bash records your history as it goes but if you are operating across multiple windows it doesn’t work the way you would hope for - e.g. it is only recorded from a single given session, even if you work in multiple. `PROMPT_COMMAND` is a bash variable that is run as part of running commands. This particular one is designed to time and date stamp commands (not run as root) and their working directory into a daily log file. The logs live in ~/.logs/ so this needs to be made for the command to run mkdir -p ~/.logs.
 
 ```bash {filename=".bashrc"}
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'

@@ -54,3 +54,7 @@ params:
   editURL:
     enable: true
     base: "https://github.com/murraycadzow/rse-syska/edit/main/content"
+
+  blog:
+    list:
+      displayTags: true

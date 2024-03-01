@@ -1,6 +1,6 @@
 ---
-title: My Site
-toc: false
+title: RSE Stuff You Should Know
+toc: true
 ---
 
 This is the landing page.

@@ -1,6 +1,5 @@
 ---
 title: Better bash history
-tags: bash config
 ---
 
 

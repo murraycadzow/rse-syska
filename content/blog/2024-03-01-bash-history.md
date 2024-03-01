@@ -16,4 +16,4 @@ Bash records your history as it goes but if you are operating across multiple wi
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
 ```
 
-If I want to search my logs I can use grep <command> ~/.logs/* and it will tell me all the times and directories I ran a command, and how I ran it. The history in these log files is made up of all commands you run on the computer, regardless of how many terminal windows you have open.
+If I want to search my logs I can use `grep <command> ~/.logs/*` and it will tell me all the times and directories I ran a command, and how I ran it. The history in these log files is made up of all commands you run on the computer, regardless of how many terminal windows you have open.

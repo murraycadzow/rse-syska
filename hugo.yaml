@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: RSE Stuff You Should Know
 
 # import hextra as module
 module:
@@ -18,12 +18,12 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
-    - identifier: blog
+     - identifier: blog
       name: Blog
       pageRef: /blog
+      weight: 1
+    - name: Docs
+      pageRef: /docs
       weight: 2
     - name: About
       pageRef: /about
